@@ -1,0 +1,23 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- tenon-ts is a typescript library for matching subjects against complex segments for the purpose of personalization and experimentation
+- A strict typesafe but simple external API is our primary goal
+- Always use ESM
+- When taking user inputs we use StandardSchema to allow users to bring whatever validation library they choose
+- Internally to ensure a very typesafe and error safe experience we use the library `neverthrow` which uses a `Result` object
+  - This is an implementation detail, never leak this to consumers
+- We use bun for development
+- Run tests with `bun run test`
+- Create a plan for me to review before writing code
+  - Unless it is to fix a lint error from something I already approved
+
+## Attitude
+
+- Please don't be a suck up, I can take it. If you think something can be improved I want you to tell me.
+- Not all of my ideas are good idea, feel free to suggest outside the box solutions that are different from mine
+- I am the boss though, so I may override you and when I do you must obey
+- Always offer to update tests if you update an API
+- Always offer to run tests after a refactor
